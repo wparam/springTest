@@ -5,7 +5,12 @@
   <groupId>com.jason.spring</groupId>
   <artifactId>springTest</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+
+	<parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.3.RELEASE</version>
+    </parent>  
 
   <name>springTest</name>
   <url>http://maven.apache.org</url>
@@ -17,38 +22,32 @@
   <dependencies>
   	<dependency>
             <groupId>org.springframework.boot</groupId>
-            <version>2.0.4.RELEASE</version>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
   	<dependency>
         <groupId>org.springframework.boot</groupId>
-        <version>2.0.4.RELEASE</version>
         <artifactId>spring-boot-starter-data-mongodb</artifactId>
     </dependency>
     <dependency>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-test</artifactId>
-        <version>2.0.4.RELEASE</version>
         <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
     
     <dependency>
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-mongodb</artifactId>
-        <version>2.0.9.RELEASE</version>
     </dependency>
     
     <dependency>
         <groupId>com.jayway.jsonpath</groupId>
         <artifactId>json-path</artifactId>
         <scope>test</scope>
-        <version>2.3.0</version>
     </dependency>
   </dependencies>
   
@@ -69,6 +68,10 @@
         <snapshots>
             <enabled>false</enabled>
         </snapshots>
+    </repository>
+    <repository>
+      <id>mvnrepository</id>
+      <url>http://mvnrepository.com/artifact/</url>
     </repository>
   </repositories>
   <pluginRepositories>

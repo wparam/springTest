@@ -9,7 +9,7 @@ public class Hotel {
 	@Id
 	private String id;
 	
-	private Integer age;
+	public Integer age;
 	
 	public String firstName;	
 	
